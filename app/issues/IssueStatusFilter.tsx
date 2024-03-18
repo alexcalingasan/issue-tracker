@@ -10,7 +10,8 @@ const statuses: {label: string, value: string }[] = [
   {label: "Open", value: Status.OPEN},
   {label: "In Progress", value: Status.IN_PROGRESS},
   {label: "Closed", value: Status.CLOSED},
-] 
+];
+
 const IssueStatusFilter = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
