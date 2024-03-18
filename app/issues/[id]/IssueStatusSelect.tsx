@@ -19,7 +19,6 @@ const IssueStatusSelect = ({ issue }: { issue: Issue }) => {
   const onStatusChange = async (status: Status) => {
     try {
       await axios.patch("/api/issues/" + issue.id, { status });
-      router.refresh();
     } catch (error) {
       toast.error("Changes could not be saved.")
     }
